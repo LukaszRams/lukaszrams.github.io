@@ -1,0 +1,287 @@
+    * {
+        color: white;
+        font-family: 'Patrick Hand', cursive;
+    }
+    
+    body {
+        background-image: linear-gradient(#2c2c2c, #3f3f3f);
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .frame {
+        display: inline-flex;
+        border-radius: 15%;
+        box-shadow: 0 0 20px white;
+        transition: all 3s, opacity 0.5s, width 2s;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subframe {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .frame.center {
+        order: 1;
+        height: 80vh;
+        width: 50vw;
+        margin: 10vw;
+    }
+    
+    .frame.left {
+        font-size: 100%;
+        order: 0;
+        transform: rotateY(180deg);
+        height: 15vh;
+        width: 10vw;
+        margin: 5vw;
+    }
+    
+    .frame.right {
+        font-size: 100%;
+        order: 2;
+        transform: rotateY(180deg);
+        height: 15vh;
+        width: 10vw;
+        margin: 5vw;
+    }
+    
+    .frame.hideRight {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        font-size: 0%;
+    }
+    
+    .frame.hideLeft {
+        order: 2;
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        font-size: 0%;
+    }
+    
+    .rotate_div {
+        width: 100%;
+        height: 100%;
+        transition: font-size 0.1s;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: min(4vw, 6vh)
+    }
+    
+    h2 {
+        font-size: min(2vw, 3vh);
+        text-align: center;
+        margin: 0% 5%;
+    }
+    
+    #profile_img {
+        display: block;
+        filter: grayscale(30%);
+        width: min(40vw, 30vh);
+        height: auto;
+        border-radius: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 1s;
+    }
+    
+    #profile_img:hover {
+        width: min(45vw, 35vh);
+    }
+    
+    #WTimg {
+        display: block;
+        width: min(40vw, 30vh);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        transition: all 1s
+    }
+    
+    #WTimg:hover {
+        width: min(45vw, 35vh);
+    }
+    
+    #GDimg {
+        width: min(40vw, 30vh);
+        transition: all 1s
+    }
+    
+    #GDimg:hover {
+        transform: scale(1.2);
+    }
+    
+    .skill {
+        display: inline;
+        width: 30vw;
+        font-size: min(2vw, 3vh);
+        margin: 0
+    }
+    
+    .level {
+        display: inline;
+        font-size: min(2vw, 3vh);
+        width: 60vw;
+        margin: 0
+    }
+    
+    .course {
+        font-size: min(2vw, 3vh);
+        color: bisque;
+        padding-top: 5%;
+    }
+    
+    .project {
+        padding-top: 10%;
+        font-size: 2vw;
+    }
+    
+    #aboutme {
+        padding: 1% 5%;
+        margin: 0;
+        font-size: min(2vw, 3vh);
+        text-align: justify
+    }
+    
+    .smlink {
+        height: min(10vh, 10vw);
+        margin: 6% 0%;
+    }
+    
+    .smimg {
+        height: min(10vh, 10vw)
+    }
+    
+    .contactLink {
+        font-size: min(2vw, 3vh);
+    }
+    
+    .tx {
+        font-size: min(2vw, 3vh);
+    }
+    
+    @media screen and (orientation: portrait) and (max-width: 1439px) and (min-width: 426px) {}
+    
+    @media screen and (orientation: portrait) and (max-width: 1024px) and (min-width: 426px) {}
+    
+    @media screen and (orientation: portrait) and (max-width: 425px) {
+        .container {
+            flex-direction: column;
+        }
+        .frame {
+            display: block;
+        }
+        .frame.center {
+            display: block;
+            height: 80vh;
+            width: 80vw;
+            margin: 10vw;
+        }
+        .frame.left {
+            display: block;
+            height: 10vh;
+            width: 20vw;
+            margin: 5vw;
+        }
+        .frame.right {
+            font-size: min(4vw, 8vh);
+            display: block;
+            height: 10vh;
+            width: 20vw;
+            margin: 5vw;
+        }
+        h1 {
+            text-align: center;
+            font-size: min(7vw, 11vh)
+        }
+        h2 {
+            font-size: min(4vw, 8vh);
+            text-align: center;
+            margin: 0% 5%;
+        }
+        #profile_img {
+            display: block;
+            filter: grayscale(30%);
+            width: min(60vw, 40vh);
+            height: auto;
+            border-radius: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 1s;
+        }
+        #profile_img:hover {
+            width: min(65vw, 45vh);
+        }
+        #WTimg {
+            display: block;
+            width: min(60vw, 50vh);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            transition: all 1s
+        }
+        #WTimg:hover {
+            width: min(65vw, 55vh);
+        }
+        #GDimg {
+            width: min(60vw, 50vh);
+            transition: all 1s
+        }
+        #GDimg:hover {
+            transform: scale(1.2);
+        }
+        .skill {
+            display: inline;
+            width: 30vw;
+            font-size: min(4vw, 6vh);
+            margin: 0
+        }
+        .level {
+            display: inline;
+            font-size: min(4vw, 6vh);
+            width: 60vw;
+            margin: 0
+        }
+        .course {
+            font-size: min(4vw, 6vh);
+            color: bisque;
+            padding-top: 5%;
+        }
+        .project {
+            padding-top: 10%;
+            font-size: min(4vw, 6vh);
+        }
+        #aboutme {
+            padding: 1% 5%;
+            margin: 0;
+            font-size: min(4vw, 6vh);
+            text-align: justify
+        }
+        .smlink {
+            height: min(12vh, 12vw);
+            margin: 6% 0%;
+        }
+        .smimg {
+            height: min(12vh, 12vw)
+        }
+        .contactLink {
+            font-size: min(5vw, 8vh);
+        }
+        .tx {
+            font-size: min(4vw, 6vh);
+        }
+    }
