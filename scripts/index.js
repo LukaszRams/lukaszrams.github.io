@@ -11,7 +11,7 @@ var pages = [
 
         "<div class=\"rotate_div\" style=\"display: flex; justify-content: center; align-items: center; flex-direction: column\">" +
         "    <h1 style=\"margin-top: 5vh\">Welcome</h1>" +
-        "    <img id=\"profile_img\" src=\"images/zdjecie.jpg\" alt=\"Profile picture\"></img>" +
+        "    <img id=\"profile_img\" src=\"images/zdjecie_bg.png\" alt=\"Profile picture\"></img>" +
         "    <h1>I'm<br/>Łukasz</h1>" +
         "</div>"
     ],
